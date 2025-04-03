@@ -13,7 +13,7 @@ export default class TasksModel extends Observable {
     this.#tasksApiService = tasksApiService;
   }
 
-  get task() {
+  get tasks() {
     return this.#boardtasks;
   }
 
