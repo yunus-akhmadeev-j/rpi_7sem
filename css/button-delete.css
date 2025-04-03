@@ -28,6 +28,6 @@
 
 .button_delete:disabled {
     background-color: #ddd; 
-    color: #aaa;
-    cursor: not-allowed; 
+    color: #240422;
+    
 }
