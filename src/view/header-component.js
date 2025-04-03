@@ -4,7 +4,7 @@ import { AbstractComponent } from '../framework/view/abstract-component.js';
 function createHeaderComponentTemplate() {
   return (
     ` <div class="name">
-<h1>Список задач</h1>
+<h1>Task List</h1>
 </div> `
   );
 }

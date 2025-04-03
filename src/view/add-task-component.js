@@ -4,9 +4,9 @@ import { AbstractComponent } from "../framework/view/abstract-component.js";
 function createFormAddTaskComponentTemplate() {
     return (
         `<form class="form">
-        <div class="form_title">Новая задача</div>
-        <input class="form_text" placeholder="Название задачи...">
-        <button type = 'submit' class="button_blue"> + Добавить </button>
+        <div class="form_title">New task</div>
+        <input class="form_text" placeholder="Task name...">
+        <button type = 'submit' class="button_blue"> + Add </button>
       </form>`
     );
 }

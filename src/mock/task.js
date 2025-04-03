@@ -1,7 +1,7 @@
 export const tasks = [
     {
         'id': '1',
-        'title': 'Выучить JS',
+        'title': 'Выучить JScript',
         'status': 'backlog',
     },
     {
