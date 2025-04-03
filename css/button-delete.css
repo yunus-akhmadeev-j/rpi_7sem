@@ -13,7 +13,7 @@
     height: 50px;
 }
    
-.clear-button{
+.button_delete{
     font-size: 13px;
     padding: 1rem 1.9rem ;
     border-radius: 0.4rem;
@@ -25,9 +25,9 @@
     height: 50px;
 }
 
-/* Кнопка, которая недоступна */
-.clear-button:disabled {
-    background-color: #ddd; /* Цвет фона для неактивной кнопки */
-    color: #aaa; /* Цвет текста для неактивной кнопки */
-    cursor: not-allowed; /* Курсор, указывающий на недоступность */
+
+.button_delete:disabled {
+    background-color: #ddd; 
+    color: #aaa;
+    cursor: not-allowed; 
 }

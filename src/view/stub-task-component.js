@@ -1,6 +1,6 @@
 import { AbstractComponent } from '../framework/view/abstract-component.js'
 function createAreaTaskComponentTemplate() {
-    return (`   <li class="task_list_stub">Перетащите карточку</li> `
+    return (`   <li class="task_list_stub">Переместить карточку</li> `
     );
 }
 

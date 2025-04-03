@@ -2,7 +2,7 @@ import TasksListComponent from '../view/list-task-component.js';
 import TaskBoardComponent from '../view/area-task-component.js';
 import { render } from '../framework/render.js';
 import { Status, StatusLabel } from '../const.js';
-import ClearButtonComponent from '../view/delete-button-component.js';
+import DeleteButtonComponent from '../view/delete-button-component.js';
 import LoadingViewComponent from '../view/LoadingViewComponent.js';
 import TaskPresenter from './task-presenter.js';
 
@@ -83,8 +83,8 @@ export default class TaskBoardPresenter {
     
 
     #renderResetButton(tasksListComponent) {
-        const clearButtonComponent = new ClearButtonComponent({
-            onClick: this.#clearBasketTasks.bind(this),
+        const deleteButtonComponent = new DeleteButtonComponent({
+            onClick: this.#deleteBasketTasks.bind(this),
         });
     
        
@@ -95,11 +95,11 @@ export default class TaskBoardPresenter {
         clearButtonComponent.setDisabled(isButtonDisabled);
     
        
-        render(clearButtonComponent, tasksListComponent.element);
+        render(deleteButtonComponent, tasksListComponent.element);
     }
     
 
-    async #clearBasketTasks() {
+    async #deleteBasketTasks() {
         try {
             this.#tasksModel.clearRecycleBin();
             this.#handleModelChange();
@@ -111,11 +111,11 @@ export default class TaskBoardPresenter {
 
     #handleModelChange() {
         this.#boardTasks = [...this.#tasksModel.tasks];
-        this.#clearBoard();
+        this.#deleteBoard();
         this.#renderBoard();
     }
 
-    #clearBoard() {
+    #deleteBoard() {
         this.#taskBoardComponent.element.innerHTML = '';
     }
 

@@ -1,10 +1,10 @@
 
 
 
-.task-baclog ,
+.task-backlog ,
 .task-in-process,
 .task-done,
-.task-bascet
+.task-basket
 {
     height: 40px;
     float: left;
@@ -16,7 +16,7 @@
 }
 
 
-.task-baclog {
+.task-backlog {
     background-color: rgb(191, 182, 182);
     color: rgb(14, 8, 8);
 }
