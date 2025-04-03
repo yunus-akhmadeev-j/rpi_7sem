@@ -92,7 +92,7 @@ export default class TaskBoardPresenter {
         const isButtonDisabled = basketTasks.length === 0;
     
         
-        clearButtonComponent.setDisabled(isButtonDisabled);
+        deleteButtonComponent.setDisabled(isButtonDisabled);
     
        
         render(deleteButtonComponent, tasksListComponent.element);
