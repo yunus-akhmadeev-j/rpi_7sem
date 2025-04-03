@@ -20,10 +20,10 @@ const UserAction = {
   };
   
   const StatusLabel = {
-    [Status.BACKLOG]: `Бэклог`,
-    [Status.PROCESSING]: `В процессе`,
-    [Status.DONE]: `Готово`,
-    [Status.BASKET]: `Корзина`,
+    [Status.BACKLOG]: `Backlog`,
+    [Status.PROCESSING]: `In Process`,
+    [Status.DONE]: `Done`,
+    [Status.BASKET]: `Basket`,
   };
   
   export {Status, StatusLabel, UpdateType , UserAction};
