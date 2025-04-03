@@ -1,9 +1,9 @@
 
 
-.task-baclog li,
+.task-baclkog li,
 .task-in-process li,
 .task-done li,
-.task-bascet li
+.task-basket li
 { 
     width: 220px ;
     height: 35px;
@@ -18,7 +18,7 @@
   
 }
 
-.task-baclog li{
+.task-backlog li{
     border-left: 5px solid  rgb(191, 182, 182);
 }
 .task-in-process li{
@@ -28,7 +28,7 @@
 
     border-left: 5px solid rgb(66, 199, 66);
 }
-.task-bascet li{
+.task-basket li{
     border-left: 5px solid rgb(255, 82, 82);
 }
 
