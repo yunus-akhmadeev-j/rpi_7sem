@@ -3,7 +3,7 @@ import { AbstractComponent } from '../framework/view/abstract-component.js';
 
 function createDeleteButtonComponentTemplate() {
     return (
-        `<button type="button" class="button_delete">x Удалить</button>`
+        `<button class="button_delete">x Удалить</button>`
     );
 }
 
